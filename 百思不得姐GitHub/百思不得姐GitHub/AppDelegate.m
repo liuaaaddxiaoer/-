@@ -16,7 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    // 设置根控制器
+    self.window.rootViewController = [[UIViewController alloc] init];
+    // 显示窗口
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
